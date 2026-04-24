@@ -74,10 +74,53 @@ code {
 	font-family: 'InstrumentSerif', sans-serif;
 }
 
+/* Coffee Theme */
+html.coffee {
+	--color-gray-50: #F5EFE6;
+	--color-gray-100: #EBE4DA;
+	--color-gray-200: #D4C4B4;
+	--color-gray-700: #3D2B20;
+	--color-gray-800: #4A3A30;
+	--color-gray-900: #3D2B20;
+}
+
+html.coffee body {
+	background-color: #F5EFE6;
+	color: #3D2B20;
+}
+
+html.coffee * {
+	border-color: #D4C4B4 !important;
+}
+
+html.coffee .text-gray-900,
+html.coffee .text-gray-800,
+html.coffee .text-gray-700 {
+	color: #3D2B20 !important;
+}
+
+html.coffee .bg-gray-50,
+html.coffee .bg-white {
+	background-color: #F5EFE6 !important;
+}
+
+html.coffee .bg-gray-100 {
+	background-color: #EBE4DA !important;
+}
+
+html.coffee #sidebar {
+	background-color: #e8e4d9 !important;
+}
+
+html.coffee nav {
+	display: none !important;
+}
+
+/* Hide Unnecessary Elements */
 /* #temporary-chat-button,
 [aria-label="Controls"],
 [aria-label="Workspace"] */
-#navbar-bg-gradient-to-b {
+nav {
 	display: none !important;
 }
 

@@ -124,7 +124,7 @@
 	});
 
 	const applyTheme = (_theme: string) => {
-		let themeToApply = _theme === 'oled-dark' ? 'dark' : _theme === 'her' || _theme === 'coffee' ? 'light' : _theme;
+		let themeToApply = _theme === 'oled-dark' ? 'dark' : _theme === 'her' || _theme === 'coffee' ? 'light coffee' : _theme;
 
 		if (_theme === 'system') {
 			themeToApply = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
@@ -136,18 +136,12 @@
 			document.documentElement.style.setProperty('--color-gray-900', '#171717');
 			document.documentElement.style.setProperty('--color-gray-950', '#0d0d0d');
 		} else if (_theme === 'coffee') {
-			document.documentElement.style.setProperty('--color-gray-50', '#FDF8F3');
-			document.documentElement.style.setProperty('--color-gray-100', '#F7EFE9');
-			document.documentElement.style.setProperty('--color-gray-200', '#E8DDD4');
-			document.documentElement.style.setProperty('--color-gray-300', '#D4C4B8');
-			document.documentElement.style.setProperty('--color-gray-400', '#B8A89A');
-			document.documentElement.style.setProperty('--color-gray-500', '#9C8B7A');
-			document.documentElement.style.setProperty('--color-gray-600', '#8B7355');
-			document.documentElement.style.setProperty('--color-gray-700', '#4A3733');
-			document.documentElement.style.setProperty('--color-gray-800', '#3D2E2A');
-			document.documentElement.style.setProperty('--color-gray-850', '#352824');
-			document.documentElement.style.setProperty('--color-gray-900', '#2A1F1B');
-			document.documentElement.style.setProperty('--color-gray-950', '#1F1815');
+			document.documentElement.style.setProperty('--color-gray-50', '#F5EFE6');
+			document.documentElement.style.setProperty('--color-gray-100', '#EBE4DA');
+			document.documentElement.style.setProperty('--color-gray-200', '#D4C4B4');
+			document.documentElement.style.setProperty('--color-gray-700', '#3D2B20');
+			document.documentElement.style.setProperty('--color-gray-800', '#4A3A30');
+			document.documentElement.style.setProperty('--color-gray-900', '#3D2B20');
 		}
 
 		themes
